@@ -1,0 +1,41 @@
+{
+  "name": "prior-cli",
+  "version": "1.7.7",
+  "description": "Prior Network AI — command-line interface",
+  "author": "Prior Network",
+  "homepage": "https://prior.ngrok.app",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Niceguygamer/prior-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Niceguygamer/prior-cli/issues"
+  },
+  "bin": {
+    "prior": "bin/prior.js"
+  },
+  "scripts": {
+    "start": "node bin/prior.js"
+  },
+  "dependencies": {
+    "chalk": "4.1.2",
+    "commander": "11.1.0",
+    "docx": "9.6.1",
+    "node-fetch": "2.7.0",
+    "open": "8.4.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "keywords": [
+    "prior",
+    "ai",
+    "cli"
+  ],
+  "license": "MIT",
+  "files": [
+    "bin/",
+    "lib/",
+    "README.md"
+  ]
+}

@@ -1,0 +1,4 @@
+node_modules/
+install.ps1
+*.log
+.env
