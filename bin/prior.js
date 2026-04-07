@@ -408,7 +408,7 @@ function banner() {
   console.log(c.brand('  ██║     ██║  ██║██║╚██████╔╝██║  ██║'));
   console.log(c.brand('  ╚═╝     ╚═╝  ╚═╝╚═╝ ╚═════╝ ╚═╝  ╚═╝'));
   console.log('');
-  console.log(c.muted(`  v${version}  ·  prior.ngrok.app`));
+  console.log(c.muted(`  v${version}  ·  priornetwork.com`));
   console.log('');
 }
 
@@ -692,7 +692,7 @@ async function loginViaBrowser() {
 
   // Generate a random state token to match the browser session to this CLI wait
   const state = crypto.randomBytes(16).toString('hex');
-  const url   = `https://prior.ngrok.app/cli-auth?state=${state}`;
+  const url   = `https://priornetwork.com/cli-auth?state=${state}`;
 
   await open(url).catch(() => {
     process.stdout.write('\n');
@@ -701,7 +701,7 @@ async function loginViaBrowser() {
 
   // Long-poll the CLI backend until browser completes login (3 min timeout handled server-side)
   const fetch = require('node-fetch');
-  const res = await fetch(`https://prior.ngrok.app/cli-backend/wait?state=${state}`, {
+  const res = await fetch(`https://priornetwork.com/cli-backend/wait?state=${state}`, {
     timeout: 185000,
   });
 
@@ -1493,7 +1493,7 @@ Be concise but thorough — this summary replaces the full history to save conte
               ];
 
               const token = require('../lib/config').getToken();
-              const res = await fetch('https://prior.ngrok.app/cli-backend/api/infer', {
+              const res = await fetch('https://priornetwork.com/cli-backend/api/infer', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ messages: compactPrompt, model: currentModel, token, cwd: process.cwd() }),

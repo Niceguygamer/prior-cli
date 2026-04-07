@@ -1,5 +1,9 @@
 # Changelog
 
+## [1.7.8] - 2026-04-07
+- Updated all backend URLs to priornetwork.com (migrated from ngrok to Cloudflare Tunnel)
+
+
 ## [1.7.7] - 2026-04-07
 - Added GitHub repository, LICENSE file, supply chain security improvements
 - Pinned all dependency versions (no more `^`)

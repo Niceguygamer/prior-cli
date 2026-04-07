@@ -1,5 +1,5 @@
 # Prior CLI — Installer
-# Usage: iwr https://prior.ngrok.app/install-cli.ps1 | iex
+# Usage: iwr https://priornetwork.com/install-cli.ps1 | iex
 
 $ErrorActionPreference = "Stop"
 $THEME = "Cyan"

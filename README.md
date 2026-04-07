@@ -86,7 +86,7 @@ Prior will list the directory, check file sizes, and report back — all in one 
 ## Requirements
 
 - Node.js 16+
-- A [Prior Network](https://prior.ngrok.app) account
+- A [Prior Network](https://priornetwork.com) account
 
 ## License
 
